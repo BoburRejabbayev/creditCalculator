@@ -1,0 +1,119 @@
+// @import '../variables';
+$black: #232323;
+$background: #ffdf8c;
+$gray-line: #f6f6f6;
+$orange: #fe5f1e;
+
+$container-width: 90%;
+
+$duration: 0.15s;
+
+body {
+    background-color: #cfcfcf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+// input {
+//     width: 200px;
+// }
+
+.app {
+    display: block;
+    max-width: 1240px;
+    width: 100%;
+    margin: auto;
+
+    // background-color: #232323;
+    // input, button{
+    //     max-width: 320px;
+    // }
+    .app__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        column-gap: 15px;
+    }
+}
+
+
+
+.sort {
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+    // width: 275px;
+
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &__label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 38px;
+        padding: 0 12px;
+        // column-gap: 25px;
+
+        svg {
+            margin-left: 8px;
+        }
+
+        span {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+        }
+    }
+
+    &__popup {
+        position: absolute;
+        left: 0;
+        top: 38px;
+        background: #ffffff;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 10px 0;
+
+        ul {
+            overflow: hidden;
+
+            li {
+                border: 1px solid &black;
+                padding: 12px 20px;
+                cursor: pointer;
+
+                &:hover {
+                    background: rgba(254, 95, 30, 0.05);
+                }
+            }
+        }
+    }
+}
+
+.form-control{
+    position: relative;
+    width: 300px;
+    z-index: 0;
+}
+
+.slider-summ{
+    position: absolute;
+    z-index: 1;
+    // bottom: -100px;
+    bottom: -50%;
+    left: 0;
+}
