@@ -1,23 +1,8 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@media (max-width: 800px) {
+    .app__info{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 0 10px;
+    }
 }
-.input-color{
-    border: 1px black solid;
-}
-
-
-
-.app{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.table{
-    max-width: 1140px;
-    width: 100%;
-} */
